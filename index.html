@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"href="imagenes/favicon.ico">
+    <title>PeraStore!</title>
+    <!--aca esta el enlace de nuestra libreria de boostrap, de aca se sacaron 
+        los icocnos como de huevito y eso, el carrito y la flechas volver y siguiente de nuestro pagina support-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <aside> 
+            <header>
+                <h1 class="logo"><a href="login.html"><i class="bi bi-person-circle"></i></a></i> PeraStore!</h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <!--Aca podemos observar nuestro navbar que es nuestro aside del menu (el active indica donde inicia automatica la pagina)-->
+                    <li><button id="lanzamientos" class="boton-menu boton-categoria active"><i class="bi bi-egg-fill"></i>lanzamientos!</button></li>
+                    <li><button id="peraphones" class="boton-menu boton-categoria "><i class="bi bi-egg"></i>Peraphones</button></li>
+                    <li><button id="perabook" class="boton-menu boton-categoria"><i class="bi bi-egg"></i>Perabooks!</button></li>
+                    <li><button id="perapod" class="boton-menu boton-categoria"><i class="bi bi-egg"></i>Perapods!</button></li>
+                    <li><a class="boton-menu boton-carrito"  href="carrito.html"><i class="bi bi-cart3"></i>Carrito <span id="numerito" class="numerito">0</span></a></li>
+                </ul>
+            </nav>
+            <footer><a class="texto-footer" href="support.html">Support<i class="bi bi-person-raised-hand"></i></a></footer>
+        </aside>
+        <main>
+            <!--aca estaban las imagenes y la estructura que luego fue pasada a javascript para hacer de mas facil manejo y mas iteractivo-->
+            <div class="barra-buscador">
+    
+             <input type="" id="input-buscar" name="search" placeholder="Buscar" > <i class="bi bi-search"></i> 
+        
+            </div>
+            <h2 class="titulo-principal" id="titulo-principal">Lo mas nuevo!<br><hr><br>Muchisimas variedades para ti, <br>tus gustos son nuestros gustos <br> <img src="imagenes/perafon copy 2.PNG" alt=""><hr></h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>
